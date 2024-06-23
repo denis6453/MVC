@@ -6,13 +6,13 @@ import com.example.uni.model.impl.Student;
 import java.util.List;
 
 public class StudentService {
-    public Student createStudent(String name, String lastName, Integer groupId) {
+    public Student createStudent(String name, String lastName) {
         int id;
         int size = DataBase.studentsDb.size();
         if(size == 0) id = 1;
         else id = size + 1;
 
-        Student student = new Student(id, name, lastName, groupId);
+        Student student = new Student(id, name, lastName);
 
         DataBase.studentsDb.add(student);
 

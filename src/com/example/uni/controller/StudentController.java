@@ -8,8 +8,8 @@ import java.util.List;
 public class StudentController {
     private StudentService service = new StudentService();
 
-    public Student createStudent(String name, String lastName, Integer groupId)  {
-        return service.createStudent(name, lastName, groupId);
+    public Student createStudent(String name, String lastName)  {
+        return service.createStudent(name, lastName);
     }
 
     public Student getById (Integer id) {

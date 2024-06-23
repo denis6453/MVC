@@ -7,7 +7,7 @@ import com.example.uni.view.StudentView;
  * program
  */
 public class Main {
-    static public void main (String[] args) {
+    static public void main (String[] args) throws Exception {
         new StudentView().start();
     }
 }
